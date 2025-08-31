@@ -1,0 +1,9 @@
+POST http://localhost:8080/api
+Content-Type: application/json
+
+{
+ "name": "Tom",
+ "age": 12
+}
+
+<> 2025-08-31T09:05:41.846+00:00
