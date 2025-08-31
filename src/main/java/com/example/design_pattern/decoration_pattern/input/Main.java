@@ -15,13 +15,14 @@ public class Main {
     public static void main(String[] args) {
         File file = new File("src/test.pdf");
         long l = Instant.now().toEpochMilli();
-        try (bufferedFileInputStream bis = new bufferedFileInputStream(new FileInputStream(file))){
+        try (countBufferdFileInputStream cbfi = new countBufferdFileInputStream(new FileInputStream(file))){
             while(true){
-                int bufferRead = bis.read();
+                int bufferRead = cbfi.read();
                 if(bufferRead == -1){
                     break;
                 }
             }
+            System.out.println("调用read()次数" + cbfi.getReadCount());
             System.out.println("用时"+ (Instant.now().toEpochMilli()-l) + "毫秒");
         } catch (IOException e) {
             throw new RuntimeException(e);
