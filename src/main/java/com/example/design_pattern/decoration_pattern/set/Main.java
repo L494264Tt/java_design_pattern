@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author L494264Tt@gmail.com
+ * @author L494264Tt@outlook.com
  * @date 2025/8/31 13:47
  */
 
@@ -26,6 +26,5 @@ public class Main {
         set.remove("1");
         System.out.println(set);
 
-        Collection<Object> objects = Collections.synchronizedCollection(new ArrayList<>());
     }
 }

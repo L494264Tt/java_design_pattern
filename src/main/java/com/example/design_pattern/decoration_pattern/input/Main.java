@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.time.Instant;
 
 /**
- * @author L494264Tt@gmail.com
+ * @author L494264Tt@outlook.com
  * @date 2025/8/31 14:19
  */
 
@@ -15,10 +15,10 @@ public class Main {
     public static void main(String[] args) {
         File file = new File("src/test.pdf");
         long l = Instant.now().toEpochMilli();
-        try (InputStream bis = new bufferedFileInputStream(new FileInputStream(file))){
+        try (bufferedFileInputStream bis = new bufferedFileInputStream(new FileInputStream(file))){
             while(true){
-                int read = bis.read();
-                if(read == -1){
+                int bufferRead = bis.read();
+                if(bufferRead == -1){
                     break;
                 }
             }

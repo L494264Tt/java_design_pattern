@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * @author L494264Tt@gmail.com
+ * @author L494264Tt@outlook.com
  * @date 2025/8/31 15:09
  */
 
