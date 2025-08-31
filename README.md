@@ -28,8 +28,8 @@ src/
 
 ## 运行环境
 
-- Java 17+
-- Spring Boot
+- Java 21
+- Spring Boot 3.5.5
 - Gradle
 
 ## 如何运行
